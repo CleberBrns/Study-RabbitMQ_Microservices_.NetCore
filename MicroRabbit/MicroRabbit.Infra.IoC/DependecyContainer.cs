@@ -1,7 +1,10 @@
-﻿using MicroRabbit.Baking.Application.Interfaces;
+﻿using MediatR;
+using MicroRabbit.Baking.Application.Interfaces;
 using MicroRabbit.Baking.Application.Services;
 using MicroRabbit.Banking.Data.Context;
 using MicroRabbit.Banking.Data.Repository;
+using MicroRabbit.Banking.Domain.CommandHandlers;
+using MicroRabbit.Banking.Domain.Commands;
 using MicroRabbit.Banking.Domain.Interfaces;
 using MicroRabbit.Domain.Core.Bus;
 using MicroRabbit.Infra.Bus;
@@ -15,6 +18,9 @@ namespace MicroRabbit.Infra.IoC
         {
             // Domain Bus
             services.AddTransient<IEventBus, RabbitMQBus>();
+
+            // Domaing Banking Commands
+            services.AddTransient<IRequestHandler<CreateAccountTransferCommand, bool>, TransferAccountCommandHandler>();
 
             // Application Repository
             services.AddTransient<IAccountRepository, AccountRepository>();
