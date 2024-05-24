@@ -1,8 +1,8 @@
 ﻿using MicroRabbit.Transfer.Domain.Models;
 
-namespace MicroRabbit.Transfer.Application.Interfaces
+namespace MicroRabbit.Transfer.Domain.Interfaces
 {
-    public interface ITransferService
+    public interface ITransferRepository
     {
         IEnumerable<AccountTransferLog> GetAccountTransferLogs();
     }
