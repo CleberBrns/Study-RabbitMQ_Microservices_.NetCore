@@ -1,5 +1,5 @@
-﻿using MicroRabbit.Baking.Application.Interfaces;
-using MicroRabbit.Baking.Application.Models.Dtos;
+﻿using MicroRabbit.Banking.Application.Interfaces;
+using MicroRabbit.Banking.Application.Models.Dtos;
 using MicroRabbit.Banking.Domain.Commands;
 using MicroRabbit.Banking.Domain.Interfaces;
 using MicroRabbit.Banking.Domain.Models;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MicroRabbit.Baking.Application.Services
+namespace MicroRabbit.Banking.Application.Services
 {
     public class AccountService : IAccountService
     {

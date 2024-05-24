@@ -1,6 +1,6 @@
 ﻿using MediatR;
-using MicroRabbit.Baking.Application.Interfaces;
-using MicroRabbit.Baking.Application.Services;
+using MicroRabbit.Banking.Application.Interfaces;
+using MicroRabbit.Banking.Application.Services;
 using MicroRabbit.Banking.Data.Context;
 using MicroRabbit.Banking.Data.Repository;
 using MicroRabbit.Banking.Domain.CommandHandlers;

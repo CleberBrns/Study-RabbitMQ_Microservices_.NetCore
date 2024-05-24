@@ -1,5 +1,5 @@
-using MicroRabbit.Baking.Application.Interfaces;
-using MicroRabbit.Baking.Application.Models.Dtos;
+using MicroRabbit.Banking.Application.Interfaces;
+using MicroRabbit.Banking.Application.Models.Dtos;
 using MicroRabbit.Banking.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 

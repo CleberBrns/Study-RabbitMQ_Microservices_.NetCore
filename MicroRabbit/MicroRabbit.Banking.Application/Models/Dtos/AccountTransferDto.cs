@@ -1,4 +1,4 @@
-﻿namespace MicroRabbit.Baking.Application.Models.Dtos
+﻿namespace MicroRabbit.Banking.Application.Models.Dtos
 {
     public class AccountTransferDto
     {
