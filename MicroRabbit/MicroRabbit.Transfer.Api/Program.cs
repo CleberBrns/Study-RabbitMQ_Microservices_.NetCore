@@ -1,5 +1,8 @@
+using MicroRabbit.Transfer.Domain.Events;
+using MicroRabbit.Domain.Core.Bus;
 using MicroRabbit.Infra.IoC;
 using MicroRabbit.Transfer.Data.Context;
+using MicroRabbit.Transfer.Domain.EventHandlers;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -55,4 +58,13 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Transfer Microservice V1");
 });
 
+ConfigureEventBus(app);
+
 app.Run();
+
+
+void ConfigureEventBus(IApplicationBuilder app)
+{
+    var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
+    eventBus.Subscribe<TransferAccountEvent, TransferEventHandler>();
+}

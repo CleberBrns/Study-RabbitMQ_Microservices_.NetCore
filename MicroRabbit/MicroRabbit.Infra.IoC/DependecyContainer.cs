@@ -12,6 +12,8 @@ using MicroRabbit.Transfer.Application.Interfaces;
 using MicroRabbit.Transfer.Application.Services;
 using MicroRabbit.Transfer.Data.Context;
 using MicroRabbit.Transfer.Data.Repository;
+using MicroRabbit.Transfer.Domain.EventHandlers;
+using MicroRabbit.Transfer.Domain.Events;
 using MicroRabbit.Transfer.Domain.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -23,6 +25,9 @@ namespace MicroRabbit.Infra.IoC
         {
             // Domain Bus
             services.AddTransient<IEventBus, RabbitMQBus>();
+
+            // Domaing Events
+            services.AddTransient<IEventHandler<TransferAccountEvent>, TransferEventHandler>();
 
             // Domaing Banking Commands
             services.AddTransient<IRequestHandler<CreateAccountTransferCommand, bool>, TransferAccountCommandHandler>();
