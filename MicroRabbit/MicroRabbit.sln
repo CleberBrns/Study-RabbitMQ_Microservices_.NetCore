@@ -55,6 +55,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Transfer.Domain
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Banking.Application", "MicroRabbit.Banking.Application\MicroRabbit.Banking.Application.csproj", "{C42A78B6-7077-41E4-92D7-32E06D6059C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Mvc", "MicroRabbit.Mvc\MicroRabbit.Mvc.csproj", "{7844F94F-6909-45B5-AC5F-902922311830}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{C42A78B6-7077-41E4-92D7-32E06D6059C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C42A78B6-7077-41E4-92D7-32E06D6059C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C42A78B6-7077-41E4-92D7-32E06D6059C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7844F94F-6909-45B5-AC5F-902922311830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7844F94F-6909-45B5-AC5F-902922311830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7844F94F-6909-45B5-AC5F-902922311830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7844F94F-6909-45B5-AC5F-902922311830}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -131,6 +137,7 @@ Global
 		{D287402C-6999-47B4-A960-DC3DA6B993F1} = {A8841B02-89AB-4691-92EA-12A4FF605BD2}
 		{1F61711E-280C-4FCE-A2A7-8CB03031284B} = {6A4E2131-BA9C-4754-83A6-4D420078B970}
 		{C42A78B6-7077-41E4-92D7-32E06D6059C0} = {8F622E3A-653F-48E8-A89C-9E1EB6804DC7}
+		{7844F94F-6909-45B5-AC5F-902922311830} = {CEECA0A8-C840-4259-B9B6-B64680C09207}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BE9C155A-E88E-4259-B0B0-E3B56886322F}
